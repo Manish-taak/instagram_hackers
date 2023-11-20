@@ -1,27 +1,150 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0px;
+  height: 56px;
+  align-items: center;
+}
+
+.logo {
+  background: linear-gradient(54.09deg, #0348dd 2.03%, #8142f5 48.63%, #ee4dd4 96.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.banner_section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(54.09deg, #0348dd 2.03%, #8142f5 48.63%, #ee4dd4 96.22%);
+  padding: 24px 16px 64px 16px
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  padding: 8px 24px;
+}
+
+.chil-banner-3 {
+  display: flex;
+  gap: 8px;
+  max-width: 635px;
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  border: 1px solid black;
+  max-width: 456px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+
+}
+
+.banner-h2-text {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 39px;
+  color: #fff;
+}
+
+.banner-h2-text {
+  padding-bottom: 10px;
+}
+
+.btn-paste {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #252638;
+  gap: 4px;
+  background-color: #f2d1fd;
+  border-radius: 10px;
+  position: absolute;
+  right: 2%;
+  top: 3px;
+  font-weight: 500;
+  border-color: linear-gradient(54.09deg, #0348dd 2.03%, #8142f5 48.63%, #ee4dd4 96.22%);
+}
+
+.downloade-btn {
+  display: flex;
+  gap: 8px;
+  background-color: #00be63;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .16);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 8px;
+  border: none;
+}
+
+.input-paste {
+  padding: 14px 14px;
+  border: none;
+  outline: none;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.banner-p-text {
+  color: rgba(255, 255, 255, .8);
+}
+
+.chil-banner-1 ul {
+  display: flex;
+  color: #fff;
+}
+
+.chil-banner-1 {
+  background-color: rgba(255, 255, 255, .2);
+  border-radius: 5px;
+}
+
+#border-left {
+  border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.launguage {
+  display: flex;
 }
